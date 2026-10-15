@@ -1,0 +1,14 @@
+-- Aurora MySQL Database Setup & Verification
+-- Lab: Connecting to Amazon Aurora Cluster and Querying Data
+
+-- 1. Select the target database
+USE world;
+
+-- 2. List all available tables
+SHOW TABLES;
+
+-- 3. (Optional) Example verification query on the country table
+SELECT Name, Continent, Population 
+FROM country 
+ORDER BY Population DESC 
+LIMIT 10;
